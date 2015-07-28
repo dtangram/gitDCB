@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My DC Comic Issues</title>
+<link rel="icon" href="Images/Music-Icon.png" type="image/png"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<link rel="stylesheet" href="CSS/DC.css" type="text/css"/>
+<link rel="stylesheet" href="CSS/themes/comicList.css" />
+<link rel="stylesheet" href="CSS/themes/jquerymobileicons.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="apple-touch-startup-image" href="Images/MobileStartImage640x960.png"/>
+<link rel="apple-touch-icon-precomposed" href="Images/musicLogoHomeIcon.png"/>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="JS/angular.min.js"></script>
+<script src="JS/angular-route.min.js"></script>
+<script src="JS/DC.js"></script>
+<script src="JS/appDCB.js"></script>
+</head>
+
+<body>
+	<div class="topBar"><img src="Images/topBar.jpg" border="0"></div>
+	<div data-role="page" id="home">        
+        <header id="mainMobileLogo">
+        	<a href="#home"><img src="Images/musiCom_MobileLogo.png"></a>
+        </header>
+        
+        <header class="header">
+          <h1>My DC Comic Issues</h1>
+        </header>
+        
+        <article data-role="content">
+			<div>
+				<div id="one">
+                    <div id="batgirlLogo">
+                        <a href="#batgirl" data-transition="slide"><img src="Images/HomeBTN/BatgirlLogo.png" width="150" height="51" border="0"></a>
+                    </div>
+                    
+                    <div id="batmanLogo">
+                        <a href="#batman"><img src="Images/HomeBTN/BatmanLogo.png" width="150" height="71" border="0"></a>
+                    </div>
+                </div>                
+			</div>
+		</article>
+        
+        <footer data-role="footer" data-position="fixed">
+			<nav data-role="navbar">
+                <ul>
+                    <li><a href="#home" target="_self"><img src="Images/icons-png/musicLogoIcon.png" width="18" height="20" class="ui-icon-carat-r"></a></li>
+                </ul>
+            </nav>
+        </footer>
+	</div>
+    
+    
+    
+    <!--BATGIRL-->
+    <div class="topBar"><img src="Images/topBar.jpg" border="0"></div>    
+    <div data-role="page" id="batgirl">
+        <header id="mainMobileLogo">
+        	<a href="#home" data-transition="slide"><img src="Images/musiCom_MobileLogo.png"></a>
+        </header>
+        
+        <header data-role="header">
+          <h1>My Batgirl (Vol. 1)<br />Comic Issues</h1>
+        </header>
+        
+        <section ng-app="myAppDCB" ng-view></section>        
+        
+        <footer data-role="footer" data-position="fixed">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide"><img src="Images/icons-png/musicLogoIcon.png" width="18" height="20" class="ui-icon-carat-r"></a></li>
+                    <li><a href="#batgirl" data-transition="slide" target="_self"><img src="Images/icons-png/BatgirlIcon.png" width="33" height="20" class="ui-icon-carat-r"></a></li>
+                </ul>
+            </nav>
+        </footer>
+	</div>
+</body>
+</html>

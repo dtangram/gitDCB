@@ -1,0 +1,16 @@
+<article data-role="content">
+	<div id="DC_List">
+    	<div class="filter">
+        	<input ng-model="query" placeholder="Filter Items..." autofocus>
+        </div>
+        <ul class="ui-listview" data-role="listview" data-filter="true">
+        	<li class="ui-first-child" ng-repeat="item in comicsDCB | filter: query">
+            	<a class="ui-btn ui-btn-icon-right ui-icon-carat-r" href="#/batgirl.html/{{comicsDCB.indexOf(item)}}" data-transition="slide">
+                	<h1>{{item.comic}}</h1>
+                    <h2>{{item.series}}</h2>
+                	<p>{{item.date}}<br />{{item.writer1}}<br />{{item.artist}}</p>
+              	</a>
+           </li>
+    	</ul>
+	</div>
+</article>

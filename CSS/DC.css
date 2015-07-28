@@ -1,0 +1,350 @@
+.topBar
+{
+	width: 320px;
+	height: 20px;
+	position: fixed;
+	z-index: 9999;
+	display: none;
+}
+
+.ui-page-header-fixed
+{
+	padding-top: 15px !important;
+}
+
+#home
+{
+	background-image: -webkit-linear-gradient(bottom, #fff, #ecdea4 80%);
+	background-image: -moz-linear-gradient(bottom, #fff, #ecdea4 80%);
+	background-image: -o-linear-gradient(bottom, #fff, #ecdea4 80%);
+	background-image: linear-gradient(to top, #fff, #ecdea4 80%); /*{a-bup-background-color}*/;
+	border: solid 1px #CBA52C /*{a-bup-border}*/;
+	color: #333333 /*{a-bup-color}*/;
+	width: 320px !important;
+	margin: 0 auto;
+}
+
+#home header:nth-child(2)
+{
+	text-align: center;
+	background: #791315;
+	border-top: 1px solid #cba52c;
+	border-bottom: 1px solid #cba52c;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 0 #eeeeee;
+	margin-bottom: 2%;
+}
+
+header:nth-child(2)
+{
+	border-left: 0;
+	border-right: 0;
+}
+
+header h1
+{
+	margin-left: 0% !important;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ECDEA4;
+}
+
+.ui-header
+{
+	width: 99.5%;
+	margin: 0 auto;
+	border: 0px;
+	background: #791315 !important /*{a-bar-background-color}*/;
+	border-color: #CBA52C !important /*{a-bar-border}*/;
+	color: #CBA52C !important /*{a-bar-color}*/;
+}
+
+.ui-title
+{
+	text-shadow: none;	
+}
+
+#home article
+{
+	margin: 0 auto;
+	padding: 0 !important;
+	width: 320px !important;
+	border: solid 1px #CBA52C;
+}
+
+article
+{
+	margin: 0 auto;
+	padding: 0 !important;
+	width: 320px !important;
+}
+
+#home .ui-header
+{
+	border-bottom: 0px !important;
+}
+
+#home .ui-content
+{
+	overflow-x: visible !important;
+	border: 0px !important;
+}
+
+.ui-mobile [data-role="page"], .ui-mobile [data-role="dialog"], .ui-page 
+{
+	position: relative !important;
+	width: 320px;
+	margin: 0 auto;
+}
+
+.ui-page 
+{
+	width: 320px !important;
+	margin: 0 auto !important;
+}
+
+#homeHeader
+{
+	width: 320px;
+	margin-left: 0% !important;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ECDEA4;
+	border-bottom: 0px !important;
+}
+
+#one
+{
+	width: 320px !important;
+	float: left;
+	padding: 0 2%;
+}
+
+#batgirlLogo
+{
+	float: left;
+	width: 150px;
+	height: 63px;
+}
+
+#batmanLogo
+{
+	float: right;
+	margin-right: 4%;
+	width: 150px;
+	height: 90px;
+}
+
+#mainMobileLogo
+{
+	background-color: #ECDEA4;
+	width: 99.5% !important;
+	border: solid 1px #CBA52C;
+	margin: 0 auto;
+}
+
+#mainMobileLogo img
+{
+	margin-top: 5.7%;
+	margin-left: .7%;
+}
+
+.ui-header .comicHeader
+{
+	padding: 2% 0;
+	margin-bottom: 0px;
+}
+
+form.ui-filterable
+{
+	padding: 0 3% 3% 3%;
+}
+
+#home footer
+{
+	overflow: hidden;
+	border-left: 0 !important;
+	border-right: 0 !important;
+	background: none !important;
+}
+
+footer
+{
+	overflow: hidden;
+	border-left: 0 !important;
+	border-right: 0 !important;
+	background: none !important;
+	border-top: solid 1px #CBA52C !important;
+}
+
+.ui-footer
+{
+	width: 320px !important;
+	margin: 0 auto;
+	background: #791315 !important;
+}
+
+.ui-footer-fixed
+{
+	width: 320px;
+}
+
+.ui-footer-fixed
+{
+    bottom: .5% !important;
+    padding-bottom: 1px;
+}
+
+#home .ui-block-a
+{
+	margin-left: 0 !important;
+}
+
+.ui-block-a
+{
+	margin-left: 0 !important;
+}
+
+.ui-block-a a
+{
+	border-left: 0 !important;
+}
+
+#home .ui-btn
+{
+	border: 0 !important;
+}
+
+.ui-btn
+{
+	border-color: #CBA52C !important;
+}
+
+#batgirl
+{
+	border: solid 1px #CBA52C;
+}
+
+#batgirl header h1
+{
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ECDEA4;
+	margin: 0 auto;
+}
+
+#batgirl .ui-header
+{
+	width: 320px;
+}
+
+#batgirl .ui-title
+{
+	border: 0 !important;
+}
+
+.mcMobileLogo
+{
+	background-color: #ECDEA4;
+	width: 99.4% !important;
+	margin: 0 auto;
+	padding: 0 !important;
+	border-left: solid 1px #CBA52C;
+	border-right: solid 1px #CBA52C;
+}
+
+.mcMobileLogo img
+{
+	margin-top: 5.7%;
+	margin-left: .6% !important;
+}
+
+#DC_List
+{
+	color: #000000;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	width: 320px;
+	margin: 0 auto;
+	padding: 0 !important;
+}
+
+#DC_List ul.ui-listview
+{
+	width: 320px !important;
+	margin: 0 auto !important;
+	
+}
+
+#DC_List ul.ui-listview li
+{
+	width: 320px !important;
+	padding: 0px !important;
+}
+
+#DC_List ul li a h2
+{
+	font-size: .8em;
+}
+
+.filter
+{
+	padding: 5%;
+	color: #333333;
+    text-shadow: 0 1px 0 #f3f3f3;
+}
+
+input
+{
+	width: 97%;
+	border-radius: 6px;
+    min-height: 2.2em;
+    text-align: left;
+    border: 1px solid #dddddd;
+	padding-left: 3%;
+}
+
+.comicHeader
+{
+	color: #ECDEA4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.1em;
+	margin: 3.5% 0 3% 0;
+	text-align: center;
+	padding-left: 3 !important;
+}
+
+.batgirlLogoComic
+{
+	float: left;
+	margin: 1% 0 0 28%;
+}
+
+.batmanLogoComic
+{
+	float: left;
+	margin: 1% 0 0 26%;
+}
+
+.comics
+{
+	width: 320px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.condition
+{
+	margin: 0 0 2% 0;
+	font-weight: bold;
+	color: #016938;
+	width: 320px;
+	float: left;
+	text-align: center;
+}

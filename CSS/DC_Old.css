@@ -1,0 +1,145 @@
+.topBar
+{
+	width: 320px;
+	height: 20px;
+	position: fixed;
+	z-index: 9999;
+	display: none;
+}
+
+.ui-page-header-fixed
+{
+	padding-top: 15px !important;
+}
+
+#home
+{
+	background-image: -webkit-linear-gradient(bottom, #fff, #ecdea4 80%);
+	background-image: -moz-linear-gradient(bottom, #fff, #ecdea4 80%);
+	background-image: -o-linear-gradient(bottom, #fff, #ecdea4 80%);
+	background-image: linear-gradient(to top, #fff, #ecdea4 80%); /*{a-bup-background-color}*/;
+	border-color: #CBA52C /*{a-bup-border}*/;
+	color: #333333 /*{a-bup-color}*/;
+	width: 320px;
+}
+
+header h1
+{
+	width: 320px !important;
+	margin-left: 0% !important;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ECDEA4;
+}
+
+#homeHeader
+{
+	width: 320px;
+	margin-left: 0% !important;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ECDEA4;
+}
+
+#one
+{
+	width: 320px;
+	float: left;
+	margin-left: -3%;
+}
+
+#batgirlLogo
+{
+	float: left;
+	width: 150px;
+	height: 63px;
+}
+
+#batmanLogo
+{
+	float: right;
+	margin-right: 4%;
+	width: 150px;
+	height: 90px;
+}
+
+#mainMobileLogo
+{
+	background-color: #ECDEA4;
+	/*margin: 1% 0 0 .5%;*/
+	max-width: 100%;
+	/*max-height: 92.5%;*/
+	/*padding: 1.5% 0 0 .7%;*/
+	padding: 1.8% 0 0 .7%;
+	/*margin-top: 5.7%;*/
+}
+
+#mainMobileLogo img
+{
+	margin-top: 5.7%; 
+}
+
+.mcMobileLogo
+{
+	background-color: #ECDEA4;
+	/*margin: 1% 0 0 .5%;*/
+	max-width: 100%;
+	/*max-height: 92.5%;*/
+	/*padding: 1.5% 0 0 .7%;*/
+	padding: 1.8% 0 0 .7%;
+	/*margin-top: 5.7%;*/
+}
+
+.mcMobileLogo img
+{
+	margin-top: 5.7%;
+}
+
+#DC_List
+{
+	color: #000000;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.comicHeader
+{
+	color: #ECDEA4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.1em;
+	margin: 3.5% 0 3% 0;
+	text-align: center;
+}
+
+.batgirlLogoComic
+{
+	float: left;
+	margin: 1% 0 0 28%;
+}
+
+.batmanLogoComic
+{
+	float: left;
+	margin: 1% 0 0 26%;
+}
+
+.comics
+{
+	width: 320px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.condition
+{
+	margin: 0 0 2% 0;
+	font-weight: bold;
+	color: #016938;
+	width: 320px;
+	float: left;
+	text-align: center;
+}
