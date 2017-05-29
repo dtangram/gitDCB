@@ -2,19 +2,20 @@
 
 var DC_ListB = angular.module("DC_ListB", []);
 
-DC_ListB.controller("DC_ControllerB", function DC_ControllerB($scope, $http)
+DC_ListB.controller("DC_ControllerB", ["$scope", "comicsDCB", function DC_ControllerB($scope, comicsDCB)
 {
-	$http.get("http://explosivedesigns.net/DC-B/JS/DC_Comics_B.json").success(function(data)
-	{
-		$scope.comicsDCB = data;
-	});
-});
+	$scope.comicsDCB = comicsDCB;
+}]);
 
-DC_ListB.controller("BatgirlController", function BatgirlController($scope, $http, $routeParams)
+DC_ListB.controller("BatgirlController", ["$scope", "comicsDCB", /*"comicsDCB1", "comicsDCB2", "comicsDCB3", "comicsDCB4", "comicsDCB5",*/ "$http", "$stateParams", function BatgirlController($scope, comicsDCB, /*comicsDCB1, comicsDCB2, comicsDCB3, comicsDCB4, comicsDCB5,*/ $http, $stateParams)
 {
-	$http.get("http://explosivedesigns.net/DC-B/JS/DC_Comics_B.json").success(function(data)
+	$http({
+		url: "JS/DC_Comics_B.json",
+		method: "get",
+		params: {comicsDCBList: $stateParams.comicsDCBList}									
+	})
+	.then(function()
 	{
-		$scope.comicsDCB = data;
-		$scope.whichItem = $routeParams.batgirlDetails;
+		$scope.comicsDCB = comicsDCB;
 	});
-});
+}]);

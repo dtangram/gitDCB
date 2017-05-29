@@ -1,10 +1,24 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+#container
+{
+	width: 320px !important;
+	height: 100vh !important;
+	margin: 0 auto;
+	padding: 0 .5% 1%;
+	position: relative;
+}
+
 .topBar
 {
-	width: 320px;
-	height: 20px;
-	position: fixed;
-	z-index: 9999;
-	display: none;
+	margin-top: 0;
+	top: 0;
+	padding: 0 !important;
+	/*display: none;*/
 }
 
 .ui-page-header-fixed
@@ -20,8 +34,11 @@
 	background-image: linear-gradient(to top, #fff, #ecdea4 80%); /*{a-bup-background-color}*/;
 	border: solid 1px #CBA52C /*{a-bup-border}*/;
 	color: #333333 /*{a-bup-color}*/;
-	width: 320px !important;
+	width: 100% !important;
+    height: 900px;
 	margin: 0 auto;
+	padding-bottom: 49px;
+	position: relative;
 }
 
 #home header:nth-child(2)
@@ -49,6 +66,9 @@ header h1
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #ECDEA4;
+	background: #791315;
+	text-align: center;
+	padding: 5px 0;
 }
 
 .ui-header
@@ -68,10 +88,11 @@ header h1
 
 #home article
 {
-	margin: 0 auto;
+	margin: 170px auto 10%;
 	padding: 0 !important;
 	width: 320px !important;
-	border: solid 1px #CBA52C;
+	text-align: center !important;
+	position: relative;
 }
 
 article
@@ -118,37 +139,54 @@ article
 
 #one
 {
-	width: 320px !important;
-	float: left;
-	padding: 0 2%;
+	width: 300px !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 #batgirlLogo
 {
 	float: left;
 	width: 150px;
-	height: 63px;
+	height: 51px;
+	padding: 0 !important;
+	margin: 0;
+}
+
+#batgirlLogo a img
+{
+	width: 100%;
 }
 
 #batmanLogo
 {
-	float: right;
-	margin-right: 4%;
 	width: 150px;
-	height: 90px;
+	height: 71px;
+	margin: 0;
+	float: left;
+}
+
+#batmanLogo a img
+{
+	width: 100%;
 }
 
 #mainMobileLogo
 {
 	background-color: #ECDEA4;
-	width: 99.5% !important;
-	border: solid 1px #CBA52C;
+	width: 320px !important;
 	margin: 0 auto;
+	top: 0;
+	position: fixed;
+	z-index: 9999;
+	overflow: hidden;
 }
 
-#mainMobileLogo img
+#mainMobileLogo a img
 {
-	margin-top: 5.7%;
 	margin-left: .7%;
 }
 
@@ -165,24 +203,39 @@ form.ui-filterable
 
 #home footer
 {
-	overflow: hidden;
-	border-left: 0 !important;
-	border-right: 0 !important;
-	background: none !important;
-}
-
-footer
-{
-	overflow: hidden;
-	border-left: 0 !important;
-	border-right: 0 !important;
-	background: none !important;
 	border-top: solid 1px #CBA52C !important;
+	border-bottom: solid 1px #CBA52C !important;
+	width: 320px;
+	padding-bottom: 2%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
 }
 
-.ui-footer
+#home footer nav
 {
-	width: 320px !important;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#home footer nav ul
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	list-style: none;
+	width: 100%;
+}
+
+#home footer nav ul li
+{
+	padding-top: 2%;
+}
+
+/*.ui-footer
+{
 	margin: 0 auto;
 	background: #791315 !important;
 }
@@ -190,13 +243,7 @@ footer
 .ui-footer-fixed
 {
 	width: 320px;
-}
-
-.ui-footer-fixed
-{
-    bottom: .5% !important;
-    padding-bottom: 1px;
-}
+}*/
 
 #home .ui-block-a
 {
@@ -220,22 +267,89 @@ footer
 
 .ui-btn
 {
-	border-color: #CBA52C !important;
+	border: none !important;
 }
 
 #batgirl
 {
+	opacity: 0;
 	border: solid 1px #CBA52C;
+	width: 320px;
+	margin: 0 auto;
+	height: 900px;
+	position: absolute;
+	z-index: -1;
+	right: 0;
+	top: 0;
+	/*left: -1000px;*/
+	padding-bottom: 49px;
+	overflow: scroll;
 }
 
-#batgirl header h1
+#batgirl::-webkit-scrollbar {
+    width: .1px;
+}
+ 
+#batgirl::-webkit-scrollbar-track {
+    -webkit-box-shadow: none; 
+    border-radius: 10px;
+}
+ 
+#batgirl::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: none; 
+}
+
+#batgirl::-moz-scrollbar {
+    width: .1px;
+}
+ 
+#batgirl::-moz-scrollbar-track {
+    -webkit-box-shadow: none; 
+    border-radius: 10px;
+}
+ 
+#batgirl::-moz-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: none; 
+}
+
+#batgirl::-o-scrollbar {
+    width: .1px;
+}
+ 
+#batgirl::-o-scrollbar-track {
+    -webkit-box-shadow: none; 
+    border-radius: 10px;
+}
+ 
+#batgirl::-o-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: none; 
+}
+
+#batgirl::-ms-scrollbar {
+    width: .1px;
+}
+ 
+#batgirl::-ms-scrollbar-track {
+    -webkit-box-shadow: none; 
+    border-radius: 10px;
+}
+ 
+#batgirl::-ms-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: none; 
+}
+
+/*#batgirl header h1
 {
 	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #ECDEA4;
 	margin: 0 auto;
-}
+}*/
 
 #batgirl .ui-header
 {
@@ -263,6 +377,37 @@ footer
 	margin-left: .6% !important;
 }
 
+/*.filter
+{
+	padding: 5% 3%;
+	color: #333333;
+    text-shadow: 0 1px 0 #f3f3f3;
+	background: #FFFFFF;
+	border: none;
+	margin-left: 0 !important;
+}
+
+input
+{
+	width: 96%;
+	border-radius: 4px;
+    min-height: 2.2em;
+    text-align: left;
+	margin: 0 auto;
+    border: 1px solid #dddddd;
+	padding-left: 3%;
+}
+
+input[placeholder="Filter Comic Books"]
+{
+	font-size: .9em;
+}*/
+
+#batgirl section
+{
+	margin-top: 125px;
+}
+
 #DC_List
 {
 	color: #000000;
@@ -272,6 +417,33 @@ footer
 	width: 320px;
 	margin: 0 auto;
 	padding: 0 !important;
+}
+
+#DC_List ul
+{
+	list-style: none;
+}
+
+#DC_List ul li a div
+{
+	border-top: solid 1px #CBA52C;
+	background-image: linear-gradient(to top, #fff, #ecdea4 58%);
+	padding: 0 1.4em .7em;
+}
+
+#DC_List ul li a div h1
+{
+	font-size: 1.6em;
+    font-weight: bold;
+    display: block;
+    margin: .45em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+	color: #333333;
+	text-align: left;
+	cursor: pointer;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 #DC_List ul.ui-listview
@@ -287,9 +459,32 @@ footer
 	padding: 0px !important;
 }
 
-#DC_List ul li a h2
+#DC_List ul li a div h2
 {
-	font-size: .8em;
+	font-size: 1.4em;
+	color: #333333;
+	font-family: 'Josefin Sans', sans-serif;
+	margin-bottom: 2%;
+}
+
+#DC_List ul li a div p
+{
+	font-size: 1.1em;
+    display: block;
+	color: #333333;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#DC_List > h1
+{
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+	color: #ECDEA4;
+	background: #791315;
+	width: 100%;
 }
 
 .filter
@@ -309,15 +504,83 @@ input
 	padding-left: 3%;
 }
 
+input[placeholder="Filter Comic Books"]
+{
+	font-size: 1em;
+}
+
+#batgirl footer
+{
+	border-top: solid 1px #CBA52C !important;
+	border-bottom: solid 1px #CBA52C !important;
+	width: 320px;
+	padding-bottom: 2%;
+	text-align: center;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	position: fixed;
+	bottom: 0;
+}
+
+#batgirl footer nav
+{
+	position: relative;
+	width: 320px;
+}
+
+#batgirl footer nav ul
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	list-style: none;
+	width: 320px;
+	background: #ecdea4;
+}
+
+#batgirl footer nav ul li
+{
+	float: left;
+	padding-top: 2%;
+	height: 100vh;
+}
+
+#batgirl footer nav ul a:nth-child(1) li
+{
+	width: 49%;
+	border-right: solid 1px #CBA52C;
+}
+
+#batgirl footer nav ul a:nth-child(2) li
+{
+	width: 50.65%;
+}
+
+#batgirl footer nav ul li a img
+{
+	margin: 0 auto;
+	
+}
+
 .comicHeader
 {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
 	color: #ECDEA4;
+	background: #791315;
+	width: 100%;
+	
+	/*color: #ECDEA4;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 1.1em;
 	margin: 3.5% 0 3% 0;
 	text-align: center;
-	padding-left: 3 !important;
+	padding-left: 3 !important;*/
 }
 
 .batgirlLogoComic

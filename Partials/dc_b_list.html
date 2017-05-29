@@ -1,15 +1,16 @@
-<article data-role="content">
+<article>
 	<div id="DC_List">
-    	<div class="filter">
-        	<input ng-model="query" placeholder="Filter Comic Books" autofocus>
-        </div>
-        <ul class="ui-listview" data-role="listview" data-filter="true">
-        	<li class="ui-first-child" ng-repeat="item in comicsDCB | filter: query">
-            	<a class="ui-btn ui-btn-icon-right ui-icon-carat-r" href="http://explosivedesigns.net/DC-B/Partials/batgirl.html" data-transition="slide">
-                	<h1>{{item.comic}}</h1>
-                    <h2>{{item.series}}</h2>
-                	<p>{{item.date}}<br />{{item.writer1}}<br />{{item.artist}}</p>
-              	</a>
+    	<h1>My Batgirl (Vol. 1)<br />Comic Issues</h1>
+		<div class="filter">
+			<input ng-model="query" placeholder="Filter Comic Books" autofocus>
+		</div>
+        <ul>
+        	<li ng-repeat="items in comicsDCB | filter: query">
+            <a class="ui-btn ui-btn-icon-right ui-icon-carat-r" ui-sref="batgirlDetails({comicsDCBList: items.comicsDCBList})"><div>
+                	<h1>{{items.comic}}</h1>
+                    <h2>{{items.series}}</h2>
+                	<p>{{items.date}}<br />{{items.writer1}} <strong>|</strong> {{items.artist}}</p>
+            </div></a>
            </li>
     	</ul>
 	</div>

@@ -1,0 +1,18 @@
+{
+  "name": "DC_List-B",
+  "version": "1.0.0",
+  "description": "DC Comic Book List-B",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "any",
+    "keyword"
+  ],
+  "author": "Douglas T. Angram",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-uglify": "^1.5.4"
+  }
+}

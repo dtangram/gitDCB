@@ -1,29 +1,27 @@
 <!--BATGIRL 1-->
-    <div class="topBar"><img src="../Images/topBar.jpg" border="0"></div>
-    <div data-role="page" id="batgirl1" style="overflow-y: hidden; background: none;" ng-model="comicsDCB">
-    	<header class="mcMobileLogo">
+    <!--<div class="topBar"><img src="../Images/topBar.jpg" border="0"></div>-->
+    <div id="batgirl1" style="overflow-y: hidden; background: none;">
+    	<!--<header class="mcMobileLogo">
         	<a href="#home" data-transition="slide"><img src="../Images/musiCom_MobileLogo.png"></a>
-        </header>
+        </header>-->
     	
-        <header data-role="header">
-            <div class="comicHeader">{{comicsDCB[whichItem].comic_header}}</div>
-        </header>
+        <h1 class="comicHeader">{{comicsDCB.comic_header}}</h1>
         
         <div class="batgirlLogoComic">
-            	<a href="#batgirl" data-transition="slide"><img ng-src="../Images/HomeBTN/BatgirlLogo.png" width="150" height="51" border="0"></a>
+            	<a ui-sref="#batgirl"><img ng-src="../Images/HomeBTN/{{comicsDCB.comic_logo}}" width="150" height="51" border="0"></a>
             </div>
         
         <article>
-            <div class="comics"><img class="comics" ng-src="../Images/Batgirl/{{comicsDCB[whichItem].comic_img}}.jpg" style="border-top: 3px solid #CBA52C; border-bottom: 3px solid #CBA52C;"></div>
-            <p class="condition">{{comicsDCB[whichItem].condition}}<br />{{comicsDCB[whichItem].cover_artist}}<br />{{comicsDCB[whichItem].cover_date}}</p>
+            <div class="comics"><img class="comics" ng-src="../Images/Batgirl/{{comicsDCB.comic_img}}" style="border-top: 3px solid #CBA52C; border-bottom: 3px solid #CBA52C;"></div>
+            <p class="condition">{{comicsDCB.condition}}<br />{{comicsDCB.cover_artist}}<br />{{comicsDCB.cover_date}}</p>
         </article>
         
-        <footer data-role="footer" data-position="fixed">
-            <nav data-role="navbar">
+        <footer>
+            <nav>
                 <ul>
-                    <li><a href="#home" data-transition="slide"><img src="../Images/icons-png/musicLogoIcon.png" width="18" height="20" class="ui-icon-carat-r"></a></li>
-                    <li><a href="#batgirl" data-transition="slide"><img src="../Images/icons-png/BatgirlIcon.png" width="33" height="20" class="ui-icon-carat-r"></a></li>
-                    <li><a href="#batgirl2" data-transition="flip"><img src="../Images/icons-png/musicLogoIcon-r.png" width="22" height="20" class="ui-icon-carat-r"></a></li>
+                    <li><a ui-sref="#home"><img src="../Images/icons-png/musicLogoIcon.png" width="18" height="20" class="ui-icon-carat-r"></a></li>
+                    <li><a ui-sref="#batgirl"><img src="../Images/icons-png/BatgirlIcon.png" width="33" height="20" class="ui-icon-carat-r"></a></li>
+                    <li><a ui-sref="#batgirl2"><img src="../Images/icons-png/musicLogoIcon-r.png" width="22" height="20" class="ui-icon-carat-r"></a></li>
                 </ul>
             </nav>
 		</footer>
